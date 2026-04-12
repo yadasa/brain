@@ -1,0 +1,295 @@
+[
+  {
+    "repo_path": "/data/.openclaw/workspace",
+    "repo_name": "workspace-root",
+    "head": "cc27838e769f66eeda116157bbdc40e335dfa323",
+    "dirty": true,
+    "stack_markers": [
+      "package.json",
+      "firebase.json"
+    ],
+    "top_level": [
+      ".openclaw",
+      "AGENTS.md",
+      "Autofill-Jobs",
+      "BOOT.md",
+      "BOOTSTRAP.md",
+      "BOSS_DASHBOARD.md",
+      "HEARTBEAT.md",
+      "IDENTITY.md",
+      "MANAGER_REQUESTS.md",
+      "MEMORY.md",
+      "SOUL.md",
+      "SmartVoiceX",
+      "TOOLS.md",
+      "USER.md",
+      "_docx",
+      "_pdf_extract",
+      "_tmp_edit_test.txt",
+      "aPhi",
+      "batch1",
+      "brain",
+      "dentai",
+      "exempliphai",
+      "exempliphai-ai-dropdown-v1.zip",
+      "exempliphai-ai-fixed-v1.zip",
+      "exempliphai-ats-wired-v1.zip",
+      "exempliphai-custom-profile-v1.zip",
+      "exempliphai-gemini-locations-plan.md",
+      "exempliphai-ref-errors-fixed-v1.zip",
+      "exempliphai_b7238a2.diff",
+      "firebase.json",
+      "firestore",
+      "firestore.indexes.json",
+      "firestore.rules",
+      "firestore.rules.bak-2026-03-29",
+      "fromstrangers",
+      "js",
+      "memory",
+      "package-lock.json",
+      "package.json",
+      "photos.html",
+      "plan.txt",
+      "referrals",
+      "sC",
+      "skills",
+      "state"
+    ],
+    "dirs": [
+      ".openclaw",
+      "Autofill-Jobs",
+      "SmartVoiceX",
+      "_docx",
+      "_pdf_extract",
+      "aPhi",
+      "batch1",
+      "brain",
+      "dentai",
+      "exempliphai",
+      "firestore",
+      "fromstrangers",
+      "js",
+      "memory",
+      "referrals",
+      "sC",
+      "skills",
+      "state"
+    ]
+  },
+  {
+    "repo_path": "/data/.openclaw/workspace/Autofill-Jobs",
+    "repo_name": "Autofill-Jobs",
+    "head": "3ca93b2a9ca69d4fb5d3ccbb0065507fb7cf9550",
+    "dirty": false,
+    "stack_markers": [],
+    "top_level": [
+      ".gitignore",
+      "LICENSE",
+      "README.md",
+      "examples",
+      "src"
+    ],
+    "dirs": [
+      "examples",
+      "src"
+    ]
+  },
+  {
+    "repo_path": "/data/.openclaw/workspace/SmartVoiceX",
+    "repo_name": "SmartVoiceX",
+    "head": "fd440d2f83f818e92a116741e37e23ee3374662c",
+    "dirty": false,
+    "stack_markers": [
+      "firebase.json"
+    ],
+    "top_level": [
+      ".firebase",
+      ".firebaserc",
+      ".gitattributes",
+      ".gitignore",
+      "CREDENTIALS_NEEDED.md",
+      "brief_docx_extracted.txt",
+      "brief_docx_extracted_2026-04-02.txt",
+      "firebase.json",
+      "firestore.rules",
+      "functions",
+      "liquid-glass-reference",
+      "mirror_site.py",
+      "mobile-plan.md",
+      "redesign.md",
+      "site"
+    ],
+    "dirs": [
+      ".firebase",
+      "functions",
+      "liquid-glass-reference",
+      "site"
+    ]
+  },
+  {
+    "repo_path": "/data/.openclaw/workspace/aPhi",
+    "repo_name": "aPhi",
+    "head": "8079bf373642715e1b194719901d4cba081bbecc",
+    "dirty": false,
+    "stack_markers": [
+      "package.json",
+      "firebase.json"
+    ],
+    "top_level": [
+      ".firebaserc",
+      ".gitignore",
+      "LICENSE",
+      "PLAN_EL_AGENTS_INTEGRATION.md",
+      "PLAN_EL_AGENTS_INTEGRATION.pdf",
+      "PLAN_UI_RESTRUCTURE.json",
+      "README.md",
+      "firebase.json",
+      "firestore.indexes.json",
+      "firestore.rules",
+      "functions",
+      "package-lock.json",
+      "package.json",
+      "public",
+      "src"
+    ],
+    "dirs": [
+      "functions",
+      "public"
+    ]
+  },
+  {
+    "repo_path": "/data/.openclaw/workspace/brain",
+    "repo_name": "brain",
+    "head": "83c0097e915774c199f02ef75ef98682eab7aa22",
+    "dirty": false,
+    "stack_markers": [],
+    "top_level": [
+      ".obsidian",
+      "Untitled.md",
+      "Welcome.md"
+    ],
+    "dirs": [
+      ".obsidian"
+    ]
+  },
+  {
+    "repo_path": "/data/.openclaw/workspace/dentai",
+    "repo_name": "dentai",
+    "head": "f888d49f7d50cdd4b91d1cb88d21b42994cceac6",
+    "dirty": true,
+    "stack_markers": [
+      "package.json",
+      "firebase.json"
+    ],
+    "top_level": [
+      ".env",
+      ".env.backup",
+      ".firebase",
+      ".firebaserc",
+      ".gitignore",
+      "IMPLEMENTATION_PLAN.md",
+      "PLAN_WIDGET_TEXT_VOICE.md",
+      "README.md",
+      "firebase.json",
+      "firebase.json.bak",
+      "firestore.rules",
+      "functions",
+      "get-drive-token.js",
+      "index.html",
+      "k",
+      "main.js",
+      "package-lock.json",
+      "package.json",
+      "preload.js",
+      "public",
+      "renderer.js",
+      "scripts",
+      "server",
+      "styles.css",
+      "test-userdata",
+      "twp",
+      "widget"
+    ],
+    "dirs": [
+      ".firebase",
+      "functions",
+      "k",
+      "public",
+      "scripts",
+      "server",
+      "test-userdata",
+      "twp",
+      "widget"
+    ]
+  },
+  {
+    "repo_path": "/data/.openclaw/workspace/exempliphai",
+    "repo_name": "exempliphai",
+    "head": "a19bae204dde497d2daa671b0523dfc5d8f15d6c",
+    "dirty": false,
+    "stack_markers": [
+      "firebase.json"
+    ],
+    "top_level": [
+      ".firebase",
+      ".firebaserc",
+      ".gitignore",
+      "AUTH_LOGIN_BROKEN_PROFILE_TROUBLESHOOTING_2026-04-07.md",
+      "DATA_FIELDS.md",
+      "FIREBASE_EXTENSION_SCHEMA.md",
+      "LICENSE",
+      "PLAN.md",
+      "PLAN_v2.md",
+      "TRACKING_TROUBLESHOOTING_2026-04-06.md",
+      "UI-FIXES-PLAN.md",
+      "_local",
+      "_research",
+      "examples",
+      "exempliphai-ai-customs-v2.zip",
+      "exempliphai-ai-dropdown-job-v1.zip",
+      "exempliphai-auto-model-v1.zip",
+      "exempliphai-autofill-fixed-v1.zip",
+      "exempliphai-gemini-clean-v1.zip",
+      "exempliphai-gemini-locations-plan.md",
+      "exempliphai-gemini-stable-v1.zip",
+      "exempliphai-job-search-gpt52-v1.zip",
+      "exempliphai-jobsearch-tailor-fixed-v1.zip",
+      "exempliphai-resume-tailor-gpt52-v1.zip",
+      "exempliphai-tailor-jobsearch-v1.zip",
+      "exempliphai-ui-fixed-gemini-v1.zip",
+      "exempliphai-working-autofill-v1.zip",
+      "firebase.json",
+      "firestore.indexes.json",
+      "firestore.rules",
+      "functions",
+      "package-lock.json",
+      "scripts",
+      "src",
+      "storage.rules",
+      "website"
+    ],
+    "dirs": [
+      ".firebase",
+      "_local",
+      "_research",
+      "examples",
+      "functions",
+      "scripts",
+      "src",
+      "website"
+    ]
+  },
+  {
+    "repo_path": "/data/.openclaw/workspace/sC",
+    "repo_name": "sC",
+    "head": "84198d3a60e99fc84a81983871e7d9c102708ef8",
+    "dirty": true,
+    "stack_markers": [],
+    "top_level": [
+      "2.3.5_0"
+    ],
+    "dirs": [
+      "2.3.5_0"
+    ]
+  }
+]

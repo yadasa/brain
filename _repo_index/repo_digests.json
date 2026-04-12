@@ -1,0 +1,346 @@
+[
+  {
+    "repo_path": "/data/.openclaw/workspace",
+    "repo_name": "workspace-root",
+    "head": "cc27838e769f66eeda116157bbdc40e335dfa323",
+    "dirty": true,
+    "stack_markers": [
+      "package.json",
+      "firebase.json"
+    ],
+    "top_level": [
+      ".openclaw",
+      "AGENTS.md",
+      "Autofill-Jobs",
+      "BOOT.md",
+      "BOOTSTRAP.md",
+      "BOSS_DASHBOARD.md",
+      "HEARTBEAT.md",
+      "IDENTITY.md",
+      "MANAGER_REQUESTS.md",
+      "MEMORY.md",
+      "SOUL.md",
+      "SmartVoiceX",
+      "TOOLS.md",
+      "USER.md",
+      "_docx",
+      "_pdf_extract",
+      "_tmp_edit_test.txt",
+      "aPhi",
+      "batch1",
+      "brain",
+      "dentai",
+      "exempliphai",
+      "exempliphai-ai-dropdown-v1.zip",
+      "exempliphai-ai-fixed-v1.zip",
+      "exempliphai-ats-wired-v1.zip",
+      "exempliphai-custom-profile-v1.zip",
+      "exempliphai-gemini-locations-plan.md",
+      "exempliphai-ref-errors-fixed-v1.zip",
+      "exempliphai_b7238a2.diff",
+      "firebase.json",
+      "firestore",
+      "firestore.indexes.json",
+      "firestore.rules",
+      "firestore.rules.bak-2026-03-29",
+      "fromstrangers",
+      "js",
+      "memory",
+      "package-lock.json",
+      "package.json",
+      "photos.html",
+      "plan.txt",
+      "referrals",
+      "sC",
+      "skills",
+      "state"
+    ],
+    "dirs": [
+      ".openclaw",
+      "Autofill-Jobs",
+      "SmartVoiceX",
+      "_docx",
+      "_pdf_extract",
+      "aPhi",
+      "batch1",
+      "brain",
+      "dentai",
+      "exempliphai",
+      "firestore",
+      "fromstrangers",
+      "js",
+      "memory",
+      "referrals",
+      "sC",
+      "skills",
+      "state"
+    ],
+    "entry_hints": [],
+    "file_excerpts": {
+      "package.json": "{\n  \"name\": \"firestore-rules-test\",\n  \"version\": \"1.0.0\",\n  \"type\": \"module\",\n  \"dependencies\": {\n    \"firebase\": \"^10.12.2\"\n  }\n}",
+      "firebase.json": "{\n  \"functions\": {\n    \"source\": \"exempliphai/functions\"\n  },\n  \"emulators\": {\n    \"firestore\": {\n      \"port\": 8080,\n      \"projectId\": \"openclaw-test\"\n    },\n    \"auth\": {\n      \"port\": 9099\n    },\n    \"functions\": {\n      \"port\": 5001\n    }\n  }\n}\n"
+    },
+    "tree_sample": "aPhi/LICENSE\naPhi/PLAN_EL_AGENTS_INTEGRATION.pdf\naPhi/PLAN_UI_RESTRUCTURE.json\naPhi/PLAN_EL_AGENTS_INTEGRATION.md\naPhi/firebase.json\naPhi/package-lock.json\naPhi/firestore.rules\naPhi/.gitignore\naPhi/README.md\naPhi/firestore.indexes.json\naPhi/src\naPhi/package.json\naPhi/.firebaserc\njs/photos.js\nexempliphai-ai-fixed-v1.zip\nAutofill-Jobs/LICENSE\nAutofill-Jobs/.gitignore\nAutofill-Jobs/README.md\nreferrals/PLAN_v2.md\n_pdf_extract/file_68.txt\n_pdf_extract/file_69.txt\n.openclaw/workspace-state.json\nBOOTSTRAP.md\nBOSS_DASHBOARD.md\nfirestore/rules.exempliphai.rules\nfirestore/schema.exempliphai.users.v1.json\nfirestore/schema.exempliphai.referralCodes.v1.json\nfirestore/schema.exempliphai.referrals.v1.json\nfirestore/indexes.exempliphai.json\nfirestore/schema.exempliphai.referralAttributions.v1.json\nvenv/pyvenv.cfg\nvenv/.gitignore\nbatch1/generate_resumes.js\nbatch1/package-lock.json\nbatch1/package.json\nexempliphai-ref-errors-fixed-v1.zip\nTOOLS.md\nHEARTBEAT.md\nUSER.md\nfirestore.rules.bak-2026-03-29\nplan.txt\nfirebase.json\nBOOT.md\npackage-lock.json\nexempliphai/AUTH_LOGIN_BROKEN_PROFILE_TROUBLESHOOTING_2026-04-07.md\nexempliphai/PLAN.md\nexempliphai/LICENSE\nexempliphai/exempliphai-ui-fixed-gemini-v1.zip\nexempliphai/exempliphai-resume-tailor-gpt52-v1.zip\nexempliphai/exempliphai-ai-customs-v2.zip\nexempliphai/exempliphai-job-search-gpt52-v1.zip\nexempliphai/exempliphai-ai-dropdown-job-v1.zip\nexempliphai/exempliphai-auto-model-v1.zip\nexempliphai/exempliphai-tailor-jobsearch-v1.zip\nexempliphai/exempliphai-working-autofill-v1.zip\nexempliphai/exempliphai-gemini-clean-v1.zip\nexempliphai/exempliphai-autofill-fixed-v1.zip\nexempliphai/firebase.json\nexempliphai/TRACKING_TROUBLESHOOTING_2026-04-06.md\nexempliphai/package-lock.json\nexempliphai/exempliphai-jobsearch-tailor-fixed-v1.zip\nexempliphai/firestore.rules\nexempliphai/.gitignore\nexempliphai/exempliphai-gemini-locations-plan.md\nexempliphai/UI-FIXES-PLAN.md\nexempliphai/firestore.indexes.json\nexempliphai/DATA_FIELDS.md\nexempliphai/PLAN_v2.md\nexempliphai/.firebaserc\nexempliphai/exempliphai-gemini-stable-v1.zip\nexempliphai/storage.rules\nexempliphai/FIREBASE_EXTENSION_SCHEMA.md\nMEMORY.md\nmemory/2026-03-31.md\nmemory/2026-04-05.md\nmemory/2026-04-12.md\nmemory/2026-03-30.md\nmemory/2026-02-16.md\nmemory/2026-04-08.md\nmemory/2026-03-27.md\nmemory/2026-04-01.md\nmemory/2026-04-10.md\nmemory/2026-04-02.md\nmemory/2026-04-06.md\nmemory/2026-03-06.md\nmemory/2026-04-07.md\nmemory/2026-02-17.md\nmemory/2026-04-11.md\nmemory/2026-04-04.md\nmemory/2026-02-15.md\nmemory/2026-02-21.md\nmemory/2026-03-29.md\nmemory/2026-02-11.md\nmemory/BibleVerses.md\nmemory/2026-03-08.md\nfirestore.rules\nphotos.html\nexempliphai-gemini-locations-plan.md\nexempliphai-ai-dropdown-v1.zip\n_tmp_edit_test.txt\nexempliphai-ats-wired-v1.zip\nfirestore.indexes.json\nexempliphai_b7238a2.diff\nSOUL.md\ndentai/get-drive-token.js\ndentai/styles.css\ndentai/firebase.json.bak\ndentai/PLAN_WIDGET_TEXT_VOICE.md\ndentai/.env\ndentai/index.html\ndentai/firebase.json\ndentai/preload.js\ndentai/package-lock.json\ndentai/firestore.rules\ndentai/.gitignore\ndentai/README.md\ndentai/.env.backup\ndentai/IMPLEMENTATION_PLAN.md\ndentai/main.js\ndentai/package.json\ndentai/.firebaserc\ndentai/renderer.js\nskills/README-skill-install-notes.txt\nAGENTS.md\nSmartVoiceX/.gitattributes\nSmartVoiceX/firebase.json\nSmartVoiceX/mobile-plan.md\nSmartVoiceX/brief_docx_extracted_2026-04-02.txt\nSmartVoiceX/brief_docx_extracted.txt\nSmartVoiceX/CREDENTIALS_NEEDED.md\nSmartVoiceX/firestore.rules\nSmartVoiceX/.gitignore\nSmartVoiceX/redesign.md\nSmartVoiceX/.firebaserc\nSmartVoiceX/mirror_site.py\nexempliphai-custom-profile-v1.zip\npackage.json\nMANAGER_REQUESTS.md\nIDENTITY.md\nbrain/Untitled.md\nbrain/Welcome.md\n_docx/plan.docx"
+  },
+  {
+    "repo_path": "/data/.openclaw/workspace/Autofill-Jobs",
+    "repo_name": "Autofill-Jobs",
+    "head": "3ca93b2a9ca69d4fb5d3ccbb0065507fb7cf9550",
+    "dirty": false,
+    "stack_markers": [],
+    "top_level": [
+      ".gitignore",
+      "LICENSE",
+      "README.md",
+      "examples",
+      "src"
+    ],
+    "dirs": [
+      "examples",
+      "src"
+    ],
+    "entry_hints": [],
+    "file_excerpts": {
+      "README.md": "<div align=\"center\">\n\nhttps://github.com/user-attachments/assets/13f0fb66-7436-40ff-8faf-c2540084337b\n\n<h1 align=\"center\">\n  Autofill Jobs\n</h1>\n  <p>\n  A chrome extension that autofills job applications, built with \n  <a href=\"https://vuejs.org/\">Vue</a>.\n</p>\n</div>\n\n## Why I made this \n\nJob applications, especially on platforms like Workday, take way too long to fill out (up to 20 mins!)\n\nI wanted to bring the ease-of-use of LinkedIn Easy Apply to other job platforms.\n\n\n## How it works ✍️\n\n - Data is stored using chrome.storage.sync with the exception of larger files like résumés, which are stored with chrome.storage.local\n - Depending on platform (Greenhouse uses React components, Lever does not) the extension fills in the fields with the data\n - On Workday, ensure you have the tab open in full screen as some essential elements don't get rendered on smaller resolutions.\n\n## Supported Platforms ✅\n - Greenhouse \n - Lever \n - Dover \n - Workday \n\n## Getting Started 🚀\nYou can either build the extension locally:\n```\n# Clone the repository\ngit clone https://github.com/andrewmillercode/Autofill-Jobs.git\n\n#Go to source directory\ncd src\n\n# Install required packages\nnpm i \n\n# Build extension\nnpm run build\n\n# Then, navigate to chrome://extensions and load unpacked the dist folder.\n```\nOr download it from the Chrome Web Store [here](https://chromewebstore.google.com/detail/autofill-jobs/mfnfecldidgkknamdfibcdnmcjlaogpc)\n\n## License 📝\n\nThis project is using the MIT License. If you'd like to report an issue with the extension, please use the issues tab. If you enjoy using this extension, please feel free to leave a ⭐. \n\nIMPORTANT: This project is not actively maintained at the moment.\n\n"
+    },
+    "tree_sample": "LICENSE\n.gitignore\nREADME.md\nsrc/env.d.ts\nsrc/tsconfig.app.json\nsrc/vite.config.ts\nsrc/index.html\nsrc/tsconfig.json\nsrc/package-lock.json\nsrc/tsconfig.node.json\nsrc/package.json\nsrc/vitest.config.ts"
+  },
+  {
+    "repo_path": "/data/.openclaw/workspace/SmartVoiceX",
+    "repo_name": "SmartVoiceX",
+    "head": "fd440d2f83f818e92a116741e37e23ee3374662c",
+    "dirty": false,
+    "stack_markers": [
+      "firebase.json"
+    ],
+    "top_level": [
+      ".firebase",
+      ".firebaserc",
+      ".gitattributes",
+      ".gitignore",
+      "CREDENTIALS_NEEDED.md",
+      "brief_docx_extracted.txt",
+      "brief_docx_extracted_2026-04-02.txt",
+      "firebase.json",
+      "firestore.rules",
+      "functions",
+      "liquid-glass-reference",
+      "mirror_site.py",
+      "mobile-plan.md",
+      "redesign.md",
+      "site"
+    ],
+    "dirs": [
+      ".firebase",
+      "functions",
+      "liquid-glass-reference",
+      "site"
+    ],
+    "entry_hints": [
+      "functions/index.js"
+    ],
+    "file_excerpts": {
+      "firebase.json": "{\n  \"functions\": [{\n    \"source\": \"functions\"\n  }],\n  \"hosting\": {\n    \"target\": \"prod\",\n    \"public\": \"site\",\n    \"ignore\": [\n      \"firebase.json\",\n      \"**/.*\",\n      \"**/node_modules/**\"\n    ],\n    \"rewrites\": [\n      { \"source\": \"/api/**\", \"function\": \"api\" }\n    ]\n  }\n}\n"
+    },
+    "tree_sample": ".gitattributes\nfunctions/package-lock.json\nfunctions/.gitignore\nfunctions/index.js\nfunctions/package.json\nfunctions/_latestRelease.js\nsite/favicon-16.png\nsite/favicon-48.png\nsite/android-chrome-512.png\nsite/apple-touch-icon.png\nsite/index.html\nsite/_mirror_manifest.txt\nsite/android-chrome-192.png\nsite/favicon-32.png\nsite/favicon.ico\nfirebase.json\nmobile-plan.md\nbrief_docx_extracted_2026-04-02.txt\nbrief_docx_extracted.txt\nCREDENTIALS_NEEDED.md\nfirestore.rules\n.gitignore\nredesign.md\n.firebaserc\nmirror_site.py\nliquid-glass-reference/index.html\nliquid-glass-reference/webgl.html\nliquid-glass-reference/README.md\nliquid-glass-reference/old.html\nliquid-glass-reference/bg-picker.js\nliquid-glass-reference/index.css\n.firebase/hosting.c2l0ZQ.cache"
+  },
+  {
+    "repo_path": "/data/.openclaw/workspace/aPhi",
+    "repo_name": "aPhi",
+    "head": "8079bf373642715e1b194719901d4cba081bbecc",
+    "dirty": false,
+    "stack_markers": [
+      "package.json",
+      "firebase.json"
+    ],
+    "top_level": [
+      ".firebaserc",
+      ".gitignore",
+      "LICENSE",
+      "PLAN_EL_AGENTS_INTEGRATION.md",
+      "PLAN_EL_AGENTS_INTEGRATION.pdf",
+      "PLAN_UI_RESTRUCTURE.json",
+      "README.md",
+      "firebase.json",
+      "firestore.indexes.json",
+      "firestore.rules",
+      "functions",
+      "package-lock.json",
+      "package.json",
+      "public",
+      "src"
+    ],
+    "dirs": [
+      "functions",
+      "public"
+    ],
+    "entry_hints": [
+      "functions/index.js",
+      "functions/src/index.js"
+    ],
+    "file_excerpts": {
+      "package.json": "{\n  \"name\": \"aphriapi\",\n  \"version\": \"1.0.0\",\n  \"description\": \"**Cutting-Edge BNN-VAE Architecture for High-Dimensional Posterior Dynamics**: aPhi implements Bayesian neural networks (BNNs) with variational autoencoder (VAE) layers for posterior predictive inference over embedding manifolds. Core mechanisms include spike-and-slab priors for sparse state gating, Gaussian process (GP) kernel renormalization for covariance adaptation, Dirichlet process mixtures for clustering recurrent trajectories, and Hamiltonian Monte Carlo (HMC) sampling for efficient evidence lower bound (ELBO) maximization in sharded tensor spaces. Federated variational inference across attention residuals ensures robust uncertainty quantification in gradient flows.\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"keywords\": [],\n  \"author\": \"\",\n  \"license\": \"ISC\",\n  \"dependencies\": {\n    \"cors\": \"^2.8.6\",\n    \"firebase-admin\": \"^13.6.1\",\n    \"firebase-functions\": \"^7.0.5\",\n    \"stripe\": \"^20.3.1\"\n  }\n}\n",
+      "firebase.json": "{\n  \"functions\": {\n    \"source\": \"functions\"\n  },\n  \"hosting\": {\n    \"public\": \"public\",\n    \"ignore\": [\n      \"firebase.json\",\n      \"**/.*\",\n      \"**/node_modules/**\"\n    ],\n    \"rewrites\": [\n      { \"source\": \"/internal/**\", \"function\": \"internalApi\" },\n      { \"source\": \"/vendor/**\", \"function\": \"vendorApi\" },\n      { \"source\": \"/stripe/webhook\", \"function\": \"stripeWebhook\" },\n      { \"source\": \"**\", \"destination\": \"/index.html\" }\n    ]\n  }\n  \n}\n",
+      "README.md": "# aPhi: Bayesian Neural Framework for Posterior Embedding Inference & Variational State Propagation\n\n**Cutting-Edge BNN-VAE Architecture for High-Dimensional Posterior Dynamics**: aPhi implements Bayesian neural networks (BNNs) with variational autoencoder (VAE) layers for posterior predictive inference over embedding manifolds. Core mechanisms include spike-and-slab priors for sparse state gating, Gaussian process (GP) kernel renormalization for covariance adaptation, Dirichlet process mixtures for clustering recurrent trajectories, and Hamiltonian Monte Carlo (HMC) sampling for efficient evidence lower bound (ELBO) maximization in sharded tensor spaces. Federated variational inference across attention residuals ensures robust uncertainty quantification in gradient flows.\n\n## Bootstrap Sequence (Prior Initialization)\n```bash\nfirebase login  # Credential posterior sampling\ncd functions && npm i && cd ..  # Kernel dependency loading\nfirebase emulators:start  # Local GP emulation\nfirebase deploy  # Distributed HMC deployment\n```\n\nInference Domain: https://aphiapi.web.app (ELBO visualization dashboard).\n\n## Fundamental Inference Primitives\n- **Posterior State Covariance Normalization**: BNN layer norms via slab-gated propagators with variational idempotency.\n- **ELBO Decomposition Traces**: Aggregated GP rollups with spike-weighted head-specific covariance matrices.\n- **Dirichlet Unit Clustering**: Dynamic allocation of mixture components using HMC trajectory forecasting.\n- **Uncertainty Quantification Safeguards**: Authenticated flows (Email/Variational), hashed MCMC chains, GP-driven anomaly priors.\n- **Sampler Library**: see `functions/lib/bnn_sampler.js` for HMC/GP/VAE/Dirichlet utilities (posterior covariance forecasting).\n\n## Prior Hyperparameters (ELBO Convergence Calibration)\n| Embedding Dimension | Slab Norm | Cycle Prior |\n|---------------------|-----------|-------------|\n| 1 latent unit      | 0.0001   | 1497 cycles ($0.1497 equiv) |\n\n## Posterior Query Interfaces\n**Internal Inference API** (`x-posterior-chain` – hashed via GP kernels):\n- `GET /internal/covariance-norm?mixtureId=component` – Sample renormalized latent norms.\n- `GET /internal/elbo-trace?cycles=30` – Variational decomposition forecasts.\n- `POST /internal/slab-injection` – Admin spike-slab prior summation.\n\n**Federated Sampling API** (`x-component-chain` or Authenticated Flow – mixture verification):\n- `POST /sampling/create-mcmc-session` – Session with trace uncertainty metadata.\n- `POST /covariance-norm/sample-injection` – Off-session propagation via saved sampler (Dirichlet-thresholded).\n\n## Local Posterior Simulation (Emulator Prior)\n```\nfirebase emulators:start --only functions,firestore,hosting  # Recurrent GP boot\n```\n\n## MCMC Chain Configuration (CLI Hyperparameter Protocol)\n```\nfirebase functions:secrets:set GP_KERNEL_KEY  # Kernel covariance gateway\nfirebase functions:secrets:set SLAB_STREAM_KEY  # Stream spike residual\nfirebase functions:secrets:set INTERNAL_COMPONENT_KEY  # Admin Dirichlet head\nfirebase functions:secrets:set LATENT_LAYER_KEY  # VAE propagation prior\n```\n\n## Residual BNN Architecture\n```\n├── functions/     # Sharded BNN core (federated VAEs, GP kernels)\n│   ├── lib/bnn_sampler.js  # HMC/Spike-slab inference engine\n│   └── src/       # Modular Dirichlet mixtures (utils, internal, federated)\n├── public/        | Posterior visualization SPA (ELBO heatmaps)\n├── firestore.rules # Latent-scoped priors (auth.component == mixture)\n└── firebase.json  # Flows to sharded inference/hosting\n```\n\nMIT License. Architected for scalable posterior inference by Kei @ aphrisoft.com. Sampling chains are GP-normed—reconstruction demands full spike-slab decomposition.\n"
+    },
+    "tree_sample": "LICENSE\nfunctions/package-lock.json\nfunctions/index.js\nfunctions/package.json\nPLAN_EL_AGENTS_INTEGRATION.pdf\npublic/app.min.js\npublic/app.css\npublic/index.html\npublic/404.html\npublic/app.js\npublic/app.min.css\nPLAN_UI_RESTRUCTURE.json\nPLAN_EL_AGENTS_INTEGRATION.md\nfirebase.json\npackage-lock.json\nfirestore.rules\n.gitignore\nREADME.md\nfirestore.indexes.json\nsrc\npackage.json\n.firebaserc"
+  },
+  {
+    "repo_path": "/data/.openclaw/workspace/brain",
+    "repo_name": "brain",
+    "head": "83c0097e915774c199f02ef75ef98682eab7aa22",
+    "dirty": false,
+    "stack_markers": [],
+    "top_level": [
+      ".obsidian",
+      "Untitled.md",
+      "Welcome.md"
+    ],
+    "dirs": [
+      ".obsidian"
+    ],
+    "entry_hints": [],
+    "file_excerpts": {},
+    "tree_sample": "_repo_index/repos.json\nUntitled.md\nWelcome.md\n.obsidian/core-plugins.json\n.obsidian/workspace.json\n.obsidian/graph.json\n.obsidian/appearance.json\n.obsidian/app.json"
+  },
+  {
+    "repo_path": "/data/.openclaw/workspace/dentai",
+    "repo_name": "dentai",
+    "head": "f888d49f7d50cdd4b91d1cb88d21b42994cceac6",
+    "dirty": true,
+    "stack_markers": [
+      "package.json",
+      "firebase.json"
+    ],
+    "top_level": [
+      ".env",
+      ".env.backup",
+      ".firebase",
+      ".firebaserc",
+      ".gitignore",
+      "IMPLEMENTATION_PLAN.md",
+      "PLAN_WIDGET_TEXT_VOICE.md",
+      "README.md",
+      "firebase.json",
+      "firebase.json.bak",
+      "firestore.rules",
+      "functions",
+      "get-drive-token.js",
+      "index.html",
+      "k",
+      "main.js",
+      "package-lock.json",
+      "package.json",
+      "preload.js",
+      "public",
+      "renderer.js",
+      "scripts",
+      "server",
+      "styles.css",
+      "test-userdata",
+      "twp",
+      "widget"
+    ],
+    "dirs": [
+      ".firebase",
+      "functions",
+      "k",
+      "public",
+      "scripts",
+      "server",
+      "test-userdata",
+      "twp",
+      "widget"
+    ],
+    "entry_hints": [
+      "main.js",
+      "functions/index.js"
+    ],
+    "file_excerpts": {
+      "package.json": "{\n  \"name\": \"SmartVoiceX\",\n  \"version\": \"1.0.9\",\n  \"description\": \"AI Agent Control Panel\",\n  \"main\": \"main.js\",\n  \"scripts\": {\n    \"start\": \"electron .\",\n    \"pack\": \"electron-builder --dir\",\n    \"dist\": \"electron-builder\",\n    \"build\": \"electron-builder\",\n    \"publish\": \"electron-builder --win --publish always\",\n    \"newver\": \"electron-builder -- --publish always\"\n  },\n  \"build\": {\n    \"appId\": \"com.keithazodeh.smartvoicex\",\n    \"productName\": \"SmartVoiceX\",\n    \"win\": {\n      \"target\": \"nsis\",\n      \"icon\": \"build/logo.ico\"\n    },\n    \"nsis\": {\n      \"oneClick\": true,\n      \"perMachine\": false,\n      \"allowElevation\": false,\n      \"allowToChangeInstallationDirectory\": false,\n      \"deleteAppDataOnUninstall\": false\n    },\n    \"extraResources\": [\n      {\n        \"from\": \"k\",\n        \"to\": \"k\"\n      }\n    ],\n    \"publish\": [\n      {\n        \"provider\": \"github\",\n        \"owner\": \"yadasa\",\n        \"repo\": \"dentai\",\n        \"private\": true\n      }\n    ]\n  },\n  \"dependencies\": {\n    \"axios\": \"^1.13.2\",\n    \"dotenv\": \"^17.2.3\",\n    \"electron-store\": \"^8.2.0\",\n    \"electron-updater\": \"^6.0.0\",\n    \"googleapis\": \"^166.0.0\",\n    \"twilio\": \"^5.2.0\",\n    \"ws\": \"^8.18.3\"\n  },\n  \"devDependencies\": {\n    \"electron\": \"^30.0.0\",\n    \"electron-builder\": \"^24.0.0\"\n  }\n}\n",
+      "firebase.json": "{\n  \"functions\": [\n    {\n      \"source\": \"functions\",\n      \"codebase\": \"default\",\n      \"disallowLegacyRuntimeConfig\": true,\n      \"ignore\": [\n        \"node_modules\",\n        \".git\",\n        \"firebase-debug.log\",\n        \"firebase-debug.*.log\",\n        \"*.local\"\n      ],\n      \"predeploy\": []\n    }\n  ],\n  \"firestore\": {\n    \"rules\": \"firestore.rules\"\n  },\n  \"emulators\": {\n    \"auth\": {\n      \"port\": 9099\n    },\n    \"functions\": {\n      \"port\": 5001\n    },\n    \"firestore\": {\n      \"port\": 8080\n    },\n    \"ui\": {\n      \"enabled\": true,\n      \"port\": 4000\n    }\n  },\n  \"hosting\": {\n    \"target\": \"staging\",\n    \"public\": \"public\",\n    \"ignore\": [\n      \"firebase.json\",\n      \"**/.*\",\n      \"**/node_modules/**\"\n    ],\n    \"rewrites\": [\n      {\n        \"source\": \"/api/**\",\n        \"function\": {\n          \"functionId\": \"api\",\n          \"region\": \"us-central1\"\n        }\n      },\n      {\n        \"source\": \"/rt/**\",\n        \"run\": {\n          \"serviceId\": \"svx-rt-ws\",\n          \"region\": \"us-central1\"\n        }\n      }\n    ]\n  },\n  \"singleProjectMode\": true\n}",
+      "README.md": "# DentAI (SmartVoiceX Beta)\n\n**DentAI** (formerly “SmartVoiceX Beta”) is an Electron-based desktop application serving as a control panel for an AI-powered voice agent. It allows users to configure an AI agent’s personality, voice, and knowledge base, then initiate outbound phone calls via Twilio. During a call, the agent interacts with callers using aPhi/Xi' ConvAI API (conversational AI over voice). The app tracks call history (duration, transcript, and AI-generated summary) and integrates with external services: Google Calendar for appointments, Google Drive for backups, Firebase for user accounts and wallets, and Stripe for payments. The UI provides tabs for Agent Settings, Phone Dialer, Call History, Appointments, and Knowledge Base. Key features include voice customization, multi-language support, encrypted local configuration, automatic updates, and an account/wallet system for billing. \n\n## Key Features\n\n- **AI Agent Configuration** – Customize the agent’s voice, languages, system prompt, and greeting. Fine-tune speech parameters (speed, stability, similarity). These settings are saved locally (encrypted) and used when making calls【14†L50-L58】【15†L225-L233】.\n- **Phone Dialer & Calls** – Enter one or more phone numbers and place a call. The app initiates an outbound call via the aPhi ConvAI Twilio API using the configured agent ID and Twilio number【12†L1308-L1315】. The caller interacts with the AI agent over the phone.\n- **Call History & Analytics** – View a dashboard of call usage (total calls, minutes). Browse a history table listing past calls with time, direction, duration, and cost【15†L349-L358】. Select a call to see the AI’s analysis and full transcript in the details pane.\n- **Knowledge Base** – Add external URLs that the AI agent should consider during conversations. These links are stored in the encrypted config and used as additional context for the agent【16†L550-L558】.\n- **Google Calendar Integration** – Connect a Google Calendar to import upcoming appointments. Enter a Calendar ID and service account key file to enable listing appointments in the app【16†L506-L514】.\n- **Account & Billing** – Sign in or create an account (using Firebase Auth). The user profile is tied to an organization (orgId) in Firestore【40†L1728-L1737】. An in-app wallet (managed in Firebase) tracks prepaid balances. Users can top up their wallet via a Stripe Checkout flow【38†L122-L130】【40†L1720-L1729】.\n- **Configuration Sync & Backup** – Configuration (all agent and account settings) is encrypted and stored in a local `.env` file. The app can automatically push this config to a private Git repo or backup to Google Drive【27†L339-L347】【27†L437-L447】.\n- **Auto-Updates & Single-Instance** – Uses `electron-updater` for app updates (manual trigger from UI). Ensures only one instance runs at a time. The app is packaged for Windows using NSIS (see `package.json`【7†L15-L18】).\n- **UI Modes** – Offers a “glass” (blur) mode and a solid mode for window appearance【17†L625-L634】.\n\n## Architecture Overview\n\n```mermaid\ngraph LR\n  subgraph App [Electron App]\n    Renderer(UI) <--> Main[Main Process]\n    Renderer -->|Firebase Auth/Firestore| Firebase[Firebase Services]\n    Renderer -->|Stripe Checkout| StripeAPI[Stripe API]\n    Main -->|ConvAI API (aPhi/Xi)| [aPhi/Xi ConvAI API]\n    Main -->|Twilio Client| Twilio[Twilio API]\n    Main -->|Google Calendar/Drive| Google[Google APIs]\n    Main -->|File System| FS[(Encrypted Config & History File)]\n  end\n```\n\n- The **Renderer (UI)** is a web-based front-end (HTML/CSS/JS) that handles user input and displays data【14†L50-L58】【15†L225-L233】. It communicates with the Main process via IPC (e.g. to initiate calls, check updates).\n- The **Main Process** (Node.js) performs backend tasks: reading/writing the encrypted config (`.env`), initiating calls through aPhi/Xi ConvAI (via `fetch`) and Twilio, interacting with Google APIs, handling auto-update, and managing local storage【12†L1293-L1302】【27†L325-L333】.\n- **Firebase Services** (Auth + Firestore) are used for user accounts and storing organizational data (e.g. wallet balances)【40†L1728-L1737】【38†L153-L161】. The app’s code includes hardcoded Firebase project config (`keiazodentai`)【20†L12-L19】 which should be replaced with your own Firebase project if used privately.\n- **Stripe** is used via Firebase Cloud Functions for payments. The app triggers a hosted Checkout session (via `functions/wallet/create-checkout-session`) and listens for the webhook to credit the user’s wallet【38†L122-L130】【38†L153-L161】.\n- **Local Storage**: Agent configuration (voice, prompts, keys, etc) is kept encrypted in `CONFIG_ENC` inside a `.env` file【27†L326-L334】. Call history is saved as `call-history.json` in the user’s app data directory【10†L594-L601】.\n\n## Installation and Setup\n\n### Prerequisites\n\n- **Node.js & npm** (for development)\n- **Git** (optional, for config sync)\n- **Twilio Account** with a verified phone number (for outbound calls)\n- **AI API Key** (aPhi/Xi / aPhi ConvAI)\n- **Firebase Project** (for Auth and Firestore; update the Firebase config in `renderer.js`)\n- **Google Cloud Service Account** (for Calendar API, if using appointments)\n- **(Optional) Google Drive OAuth 2.0 credentials** (`credentials.json` and `token.json`) for backup\n- **Stripe Account** (for wallet payments; set `STRIPE_SECRET_KEY` and webhook secret in Cloud Functions)\n\n### Installing Dependencies\n\n1. Clone the repository:\n   ```bash\n   git clone https://github.com/yadasa/dentai.git\n   cd dentai\n   ```\n2. Install Node dependencies:\n   ```bash\n   npm install\n   ```\n   This installs Electron and other packages (axios, dotenv, electron-store, googleapis, twilio, ws, etc) as listed in `package.json`【7†L41-L49】.\n\n### Configuration\n\n- **Environment Variables**: Create a `.env` file (or use `.env.backup` as a template). The app expects a single variable `CONFIG_ENC` containing an encrypted JSON string with these fields:\n  - `xiLabs.apiKey` – Your aPhi/Xi API key.\n  - `xiLabs.agentId` – The agent ID (string) for the AI voice agent.\n  - `xiLabs.phoneNumberId` – Twilio phone number SID to use as caller ID.\n  - `twilio.accountSid` & `twilio.authToken` – Your Twilio API credentials (for refreshing call status).\n  - `googleCalendar.calendarId` – Google Calendar ID (for appointments).\n  - `googleCalendar.serviceAccountKeyPath` – Path to Google service account JSON key (for calendar API).\n  - `knowledgeBase` – (optional) Array of URLs for the agent’s knowledge base.\n  - *Example config keys are loaded and merged in `loadConfigFromEnv()`【12†L1293-L1302】【11†L13-L17】.*  \n\n- **Encrypting Config**: Configuration is stored encrypted via AES-GCM. To set or update config, use the UI (click the *Load Config* button) or place `CONFIG_ENC` in `.env`. Ensure `PASSPHRASE` in `main.js` matches the encryption key (currently hardcoded).\n  \n- **Google OAuth (Drive Backup)**: If using Drive backup, place `credentials.json` (OAuth client) in `k/c.json` (packaged) or project root (dev). On first use, a browser window will open to authorize; a `token.json` will be saved.\n\n- **Firebase**: The code includes a pre-filled `firebaseConfig` in the renderer (lines [40†L1712-L1720]). Replace `apiKey`, `authDomain`, `projectId`, etc. with your Firebase project’s configuration if needed. Ensure Firestore has collections `users` (to map UID→orgId) and `organizations/{orgId}/wallet`.\n\n- **Stripe & Firebase Functions**: Deploy the `/functions` folder to Firebase Functions. Set `STRIPE_SECRET_KEY` and `STRIPE_WEBHOOK_SECRET` in the Functions’ environment. Also `APP_URL` for redirect URLs. The renderer uses the function endpoint `https://us-central1-keiazodentai.cloudfunctions.net/api/wallet/create-checkout-session`【40†L1724-L1732】.\n\n### Building the App\n\n- **Development**: Run the app with hot-reload:\n  ```bash\n  npm run start\n  ```\n  This launches the Electron app. Use `Ctrl+Shift+D` in the app to open DevTools (wired to that shortcut in `main.js`【10†L735-L743】).\n\n- **Packaging**: Build distributable (Windows .exe):\n  ```bash\n  npm run dist\n  ```\n  (This uses `electron-builder`, product name \"SmartVoiceX Beta\"【7†L13-L18】. It targets Windows NSIS installers.)\n\n- **Auto-Update**: The app uses GitHub releases for updates (see `build.publish` in `package.json`【7†L32-L39】). Auto-update checks are triggered manually from the UI (no automatic check on startup).\n\n## Configuration Details\n\n| Setting                     | Description                                                               | Example              |\n|-----------------------------|---------------------------------------------------------------------------|----------------------|\n| `xiLabs.apiKey`             | aPhi/Xi / aPhi API key for the AI agent.                              | `ABCD1234...`        |\n| `xiLabs.agentId`            | ID of the AI agent to use for calls.                                     | `agent_xyz`          |\n| `xiLabs.phoneNumberId`      | Twilio phone number SID (from your Twilio console) as caller ID.        | `PN12345`            |\n| `twilio.accountSid`         | Twilio Account SID (for Twilio API calls).                               | `ACabcdef...`        |\n| `twilio.authToken`          | Twilio Auth Token.                                                        | `ghijklmnop...`      |\n| `googleCalendar.calendarId` | Google Calendar ID to list appointments (in Appointments tab).          | `xyz@group.calendar.google.com` |\n| `googleCalendar.serviceAccountKeyPath` | File path to Google service account JSON key (for Calendar API). | `C:\\keys\\gcal.json`  |\n| `knowledgeBase`             | Array of URLs (strings) to inform the AI agent (used as extra context).   | `[\"https://example.com/doc.pdf\"]` |\n\n> **Note:** All the above are stored encrypted in `CONFIG_ENC` inside `.env`【27†L325-L334】. Do not store plain API secrets. Use the built-in “Config Editor” (Ctrl+Shift+E in-app) to view/edit the decrypted JSON safely【10†L608-L617】.\n\n## Running the App\n\n- **Start the UI**: After `npm start`, an Electron window titled *SmartVoiceX* will appear (see title bar in `index.html`【14†L9-L17】). The version is shown in the sidebar bottom (from `app.getVersion()`).\n- **Single-Instance**: Only one window is allowed. Attempts to open another will focus the existing window【8†L15-L24】.\n- **Updates**: To check for updates, use the *Settings → Performance* or a dedicated menu (the code triggers updates via `ipcMain` handlers).\n- **DevTools**: Press `Ctrl+Shift+D` (in app) to toggle developer tools【10†L735-L743】.\n\n## User Interface Walkthrough\n\nThe main UI is divided into several views, accessible via the sidebar.\n\n### Agent Settings\n\nUnder **Agent Settings**, configure the AI agent’s profile:\n\n- **Voice & Languages**: Choose a synthetic voice and supported languages for the agent【14†L111-L119】【14†L137-L146】.\n- **Agent Behavior**: Enter a “System Prompt” (the agent’s role/personality) and a “Greeting” (what it says when a call connects)【15†L204-L212】.\n- **Voice Fine-Tuning**: Adjust sliders for *Talking Speed*, *Latency (stability)*, and *Similarity Boost* to tweak voice output【15†L225-L233】【15†L244-L253】.\n\nClick **Save Agent** (sidebar) to persist changes to the encrypted config file【10†L607-L615】. The **Load Config** button loads the current config into the UI fields.\n\n### Phone Settings (Dialer)\n\nThe **Phone Settings** tab lets you place calls:\n\n- **Phone Number(s)**: Enter one or more phone numbers (comma or newline-separated) in the text area【15†L282-L290】.\n- **Call Button**: Press **Call** to start an outbound call to the listed numbers【15†L283-L290】.\n- **Log Output**: As the call proceeds, the “"
+    },
+    "tree_sample": "get-drive-token.js\nstyles.css\nfirebase.json.bak\nPLAN_WIDGET_TEXT_VOICE.md\nfunctions/.env.keiazodentai\nfunctions/package-lock.json\nfunctions/.gitignore\nfunctions/README.md\nfunctions/index.js\nfunctions/.eslintrc.js\nfunctions/package.json\npublic/host-app.js\npublic/index.html\npublic/404.html\npublic/host-auth-firebase.js\npublic/svx-widget.js\n.env\nscripts/test-callMatchesUnansweredFilter.mock.js\nscripts/answer-rate-mock-test.js\ntwp/index.html\ntwp/package-lock.json\ntwp/package.json\ntwp/server.js\nindex.html\nfirebase.json\npreload.js\npackage-lock.json\nfirestore.rules\nwidget/PLAN.md\nwidget/rollup.config.mjs\nwidget/index.html\nwidget/package-lock.json\nwidget/DEPLOYMENT.md\nwidget/.gitignore\nwidget/README.md\nwidget/package.json\nwidget/README-demo-seed.md\n.gitignore\nREADME.md\n.env.backup\nIMPLEMENTATION_PLAN.md\nmain.js\npackage.json\n.firebaserc\nrenderer.js\n.firebase/hosting.cHVibGlj.cache"
+  },
+  {
+    "repo_path": "/data/.openclaw/workspace/exempliphai",
+    "repo_name": "exempliphai",
+    "head": "a19bae204dde497d2daa671b0523dfc5d8f15d6c",
+    "dirty": false,
+    "stack_markers": [
+      "firebase.json"
+    ],
+    "top_level": [
+      ".firebase",
+      ".firebaserc",
+      ".gitignore",
+      "AUTH_LOGIN_BROKEN_PROFILE_TROUBLESHOOTING_2026-04-07.md",
+      "DATA_FIELDS.md",
+      "FIREBASE_EXTENSION_SCHEMA.md",
+      "LICENSE",
+      "PLAN.md",
+      "PLAN_v2.md",
+      "TRACKING_TROUBLESHOOTING_2026-04-06.md",
+      "UI-FIXES-PLAN.md",
+      "_local",
+      "_research",
+      "examples",
+      "exempliphai-ai-customs-v2.zip",
+      "exempliphai-ai-dropdown-job-v1.zip",
+      "exempliphai-auto-model-v1.zip",
+      "exempliphai-autofill-fixed-v1.zip",
+      "exempliphai-gemini-clean-v1.zip",
+      "exempliphai-gemini-locations-plan.md",
+      "exempliphai-gemini-stable-v1.zip",
+      "exempliphai-job-search-gpt52-v1.zip",
+      "exempliphai-jobsearch-tailor-fixed-v1.zip",
+      "exempliphai-resume-tailor-gpt52-v1.zip",
+      "exempliphai-tailor-jobsearch-v1.zip",
+      "exempliphai-ui-fixed-gemini-v1.zip",
+      "exempliphai-working-autofill-v1.zip",
+      "firebase.json",
+      "firestore.indexes.json",
+      "firestore.rules",
+      "functions",
+      "package-lock.json",
+      "scripts",
+      "src",
+      "storage.rules",
+      "website"
+    ],
+    "dirs": [
+      ".firebase",
+      "_local",
+      "_research",
+      "examples",
+      "functions",
+      "scripts",
+      "src",
+      "website"
+    ],
+    "entry_hints": [
+      "functions/index.js"
+    ],
+    "file_excerpts": {
+      "firebase.json": "{\n  \"functions\": {\n    \"source\": \"functions\"\n  },\n  \"hosting\": {\n    \"public\": \"website/LandingPage/exempliphai/out\",\n    \"ignore\": [\n      \"firebase.json\",\n      \"**/.*\",\n      \"**/node_modules/**\"\n    ],\n    \"rewrites\": [\n      {\n        \"source\": \"/api/__ping\",\n        \"function\": \"api\"\n      },\n      {\n        \"source\": \"/api/createAttribution\",\n        \"function\": \"createAttribution\"\n      },\n      {\n        \"source\": \"/api/**\",\n        \"function\": \"api\"\n      },\n      {\n        \"source\": \"/r/**\",\n        \"destination\": \"/r/index.html\"\n      }\n    ]\n  },\n  \"firestore\": {\n    \"rules\": \"firestore.rules\",\n    \"indexes\": \"firestore.indexes.json\"\n  },\n  \"storage\": {\n    \"rules\": \"storage.rules\"\n  }\n}\n"
+    },
+    "tree_sample": "AUTH_LOGIN_BROKEN_PROFILE_TROUBLESHOOTING_2026-04-07.md\nPLAN.md\nexamples/general errors.txt\n_local/NOTES_protecting_core_ip.md\n_local/file_106_auth_login_recovery_plan_2026-04-07.md\nLICENSE\nexempliphai-ui-fixed-gemini-v1.zip\nexempliphai-resume-tailor-gpt52-v1.zip\nexempliphai-ai-customs-v2.zip\nexempliphai-job-search-gpt52-v1.zip\nfunctions/FUNCTIONS.md\nfunctions/.eslintignore\nfunctions/package-lock.json\nfunctions/_publicStats.js\nfunctions/README.md\nfunctions/migrateProfile.js\nfunctions/index.js\nfunctions/package.json\nfunctions/.eslintrc.cjs\nexempliphai-ai-dropdown-job-v1.zip\nexempliphai-auto-model-v1.zip\nexempliphai-tailor-jobsearch-v1.zip\n_research/deep_research_report.txt\nexempliphai-working-autofill-v1.zip\nexempliphai-gemini-clean-v1.zip\nscripts/extract-simplify-ats.cjs\nscripts/extract-simplify-ats.js\nexempliphai-autofill-fixed-v1.zip\nfirebase.json\nTRACKING_TROUBLESHOOTING_2026-04-06.md\npackage-lock.json\nexempliphai-jobsearch-tailor-fixed-v1.zip\nfirestore.rules\n.gitignore\nexempliphai-gemini-locations-plan.md\nUI-FIXES-PLAN.md\nfirestore.indexes.json\nDATA_FIELDS.md\nPLAN_v2.md\nsrc/env.d.ts\nsrc/tsconfig.app.json\nsrc/vite.config.ts\nsrc/index.html\nsrc/tsconfig.json\nsrc/package-lock.json\nsrc/tsconfig.node.json\nsrc/.env.example\nsrc/package.json\n.firebaserc\nexempliphai-gemini-stable-v1.zip\n.firebase/hosting.d2Vic2l0ZVxMYW5kaW5nUGFnZVxleGVtcGxpcGhhaVxvdXQ.cache\n.firebase/hosting.d2Vic2l0ZVxMYW5kaW5nUGFnZVxleGVtcGxpcGhhaVxkaXN0.cache\nstorage.rules\nFIREBASE_EXTENSION_SCHEMA.md"
+  },
+  {
+    "repo_path": "/data/.openclaw/workspace/sC",
+    "repo_name": "sC",
+    "head": "84198d3a60e99fc84a81983871e7d9c102708ef8",
+    "dirty": true,
+    "stack_markers": [],
+    "top_level": [
+      "2.3.5_0"
+    ],
+    "dirs": [
+      "2.3.5_0"
+    ],
+    "entry_hints": [],
+    "file_excerpts": {},
+    "tree_sample": "2.3.5_0/offscreen.html\n2.3.5_0/local_profile.html\n2.3.5_0/index.html\n2.3.5_0/remoteConfig.json\n2.3.5_0/local_profile.js\n2.3.5_0/manifest.json"
+  }
+]
