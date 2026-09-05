@@ -5,6 +5,7 @@ import './styles.css'
 import './larp-effects.css'
 import './trading.css'
 import './influencer.css'
+import './mode-overrides.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
