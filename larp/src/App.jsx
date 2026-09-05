@@ -14,14 +14,24 @@ export default function App() {
         >
           <AgentNetwork />
           <EffectComposer multisampling={0}>
-            <Bloom luminanceThreshold={0.55} luminanceSmoothing={0.45} intensity={1.25} mipmapBlur />
-            <Noise opacity={0.018} />
-            <Vignette eskil={false} offset={0.2} darkness={0.78} />
+            <Bloom luminanceThreshold={0.55} luminanceSmoothing={0.45} intensity={1.35} mipmapBlur />
+            <Noise opacity={0.016} />
+            <Vignette eskil={false} offset={0.19} darkness={0.8} />
           </EffectComposer>
         </Canvas>
       </div>
+
+      <div className="hud-grid" aria-hidden="true" />
+      <div className="ambient-scan" aria-hidden="true" />
       <div className="scanlines" aria-hidden="true" />
       <div className="edge-glow" aria-hidden="true" />
+      <div className="corner-reticle reticle-tl" aria-hidden="true" />
+      <div className="corner-reticle reticle-tr" aria-hidden="true" />
+      <div className="corner-reticle reticle-bl" aria-hidden="true" />
+      <div className="corner-reticle reticle-br" aria-hidden="true" />
+      <div className="frame-code frame-code-left">NODE FABRIC // 284 LINKED ENTITIES // SELF-OPTIMIZING</div>
+      <div className="frame-code frame-code-right">SYNTHETIC OPERATIONS LAYER // LATENCY 21.4MS</div>
+
       <HUD />
     </main>
   )
