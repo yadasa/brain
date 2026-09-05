@@ -228,6 +228,74 @@
 .allocation-bars i:nth-child(2) { animation-delay: .33s; }
 .allocation-bars i:nth-child(3) { animation-delay: .66s; }
 
+.hud-grid {
+  position: absolute;
+  inset: 8.5% 10%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: .18;
+  background-image:
+    linear-gradient(rgba(102, 224, 255, .055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(102, 224, 255, .055) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(circle at center, black 5%, rgba(0,0,0,.35) 48%, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle at center, black 5%, rgba(0,0,0,.35) 48%, transparent 80%);
+  transform: perspective(800px) rotateX(64deg) translateY(24%);
+  transform-origin: center bottom;
+}
+
+.ambient-scan {
+  position: absolute;
+  z-index: 4;
+  pointer-events: none;
+  left: 9%;
+  right: 9%;
+  top: -8%;
+  height: 11%;
+  opacity: 0;
+  background: linear-gradient(to bottom, transparent, rgba(76, 225, 255, .025), rgba(116, 255, 183, .07), transparent);
+  filter: blur(1px);
+  animation: ambientScan 9s ease-in-out infinite;
+}
+
+.corner-reticle {
+  position: absolute;
+  z-index: 4;
+  width: 34px;
+  height: 34px;
+  opacity: .24;
+  pointer-events: none;
+}
+
+.corner-reticle::before,
+.corner-reticle::after {
+  content: '';
+  position: absolute;
+  background: rgba(109, 232, 255, .5);
+  box-shadow: 0 0 7px rgba(78, 220, 255, .08);
+}
+
+.corner-reticle::before { width: 34px; height: 1px; }
+.corner-reticle::after { width: 1px; height: 34px; }
+.reticle-tl { top: 78px; left: 18.2%; }
+.reticle-tr { top: 78px; right: 18.2%; transform: scaleX(-1); }
+.reticle-bl { bottom: 76px; left: 18.2%; transform: scaleY(-1); }
+.reticle-br { bottom: 76px; right: 18.2%; transform: scale(-1); }
+
+.frame-code {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  font: 500 5.5px 'IBM Plex Mono', monospace;
+  letter-spacing: .14em;
+  color: rgba(134, 212, 226, .18);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.frame-code-left { left: 7px; transform: translateY(-50%) rotate(-90deg) translateX(-50%); transform-origin: left center; }
+.frame-code-right { right: 7px; transform: translateY(-50%) rotate(90deg) translateX(50%); transform-origin: right center; }
+
 .brand-mark span:nth-child(1) { animation: brandSpin 7s linear infinite; }
 .brand-mark span:nth-child(2) { animation: brandSpinReverse 4.5s linear infinite; }
 .brand-mark span:nth-child(3) { animation: statusPulse 1.8s ease-in-out infinite; }
@@ -261,6 +329,13 @@
   70%, 100% { left: calc(100% + 70px); opacity: 0; }
 }
 
+@keyframes ambientScan {
+  0%, 8% { top: -10%; opacity: 0; }
+  13% { opacity: .75; }
+  58% { opacity: .22; }
+  70%, 100% { top: 105%; opacity: 0; }
+}
+
 @keyframes statusPulse {
   0%, 100% { opacity: .45; transform: scale(.88); }
   50% { opacity: 1; transform: scale(1.15); }
@@ -288,12 +363,16 @@
   .execution-strip { width: 48vw; }
   .chain-step span { font-size: 5px; }
   .chain-step > i { display: none; }
+  .reticle-tl, .reticle-bl { left: 14%; }
+  .reticle-tr, .reticle-br { right: 14%; }
 }
 
 @media (max-width: 900px) {
   .micro-status-row { display: none; }
   .execution-strip { display: none; }
   .win-toast { top: 13%; min-width: 320px; }
+  .corner-reticle, .frame-code { display: none; }
+  .hud-grid { inset: 12% 3%; opacity: .13; }
 }
 
 @media (max-width: 640px) {
@@ -302,4 +381,5 @@
   .win-copy strong { font-size: 8px; }
   .win-copy small { display: none; }
   .win-toast > b { font-size: 13px; }
+  .ambient-scan { left: 0; right: 0; }
 }
