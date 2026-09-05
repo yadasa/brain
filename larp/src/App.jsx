@@ -1,11 +1,15 @@
 import { Canvas } from '@react-three/fiber'
 import { Bloom, EffectComposer, Noise, Vignette } from '@react-three/postprocessing'
+import { useState } from 'react'
 import AgentNetwork from './components/AgentNetwork.jsx'
 import HUD from './components/HUD.jsx'
+import TradingHUD from './components/TradingHUD.jsx'
 
 export default function App() {
+  const [mode, setMode] = useState('revenue')
+
   return (
-    <main className="app-shell">
+    <main className={`app-shell mode-${mode}`}>
       <div className="canvas-wrap">
         <Canvas
           camera={{ position: [0, 0.6, 11.2], fov: 45, near: 0.1, far: 100 }}
@@ -14,9 +18,9 @@ export default function App() {
         >
           <AgentNetwork />
           <EffectComposer multisampling={0}>
-            <Bloom luminanceThreshold={0.55} luminanceSmoothing={0.45} intensity={1.35} mipmapBlur />
+            <Bloom luminanceThreshold={0.55} luminanceSmoothing={0.45} intensity={mode === 'trading' ? 1.18 : 1.35} mipmapBlur />
             <Noise opacity={0.016} />
-            <Vignette eskil={false} offset={0.19} darkness={0.8} />
+            <Vignette eskil={false} offset={0.19} darkness={mode === 'trading' ? 0.86 : 0.8} />
           </EffectComposer>
         </Canvas>
       </div>
@@ -32,7 +36,12 @@ export default function App() {
       <div className="frame-code frame-code-left">NODE FABRIC // 284 LINKED ENTITIES // SELF-OPTIMIZING</div>
       <div className="frame-code frame-code-right">SYNTHETIC OPERATIONS LAYER // LATENCY 21.4MS</div>
 
-      <HUD />
+      <div className="mode-switch" role="tablist" aria-label="Demo mode">
+        <button className={mode === 'revenue' ? 'active' : ''} onClick={() => setMode('revenue')}>REVENUE OS</button>
+        <button className={mode === 'trading' ? 'active' : ''} onClick={() => setMode('trading')}>TRADING OS</button>
+      </div>
+
+      {mode === 'revenue' ? <HUD /> : <TradingHUD />}
     </main>
   )
 }
