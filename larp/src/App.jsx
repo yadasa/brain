@@ -4,9 +4,12 @@ import { useState } from 'react'
 import AgentNetwork from './components/AgentNetwork.jsx'
 import HUD from './components/HUD.jsx'
 import TradingHUD from './components/TradingHUD.jsx'
+import InfluencerHUD from './components/InfluencerHUD.jsx'
 
 export default function App() {
   const [mode, setMode] = useState('revenue')
+  const isTrading = mode === 'trading'
+  const isInfluencer = mode === 'influencer'
 
   return (
     <main className={`app-shell mode-${mode}`}>
@@ -18,9 +21,9 @@ export default function App() {
         >
           <AgentNetwork />
           <EffectComposer multisampling={0}>
-            <Bloom luminanceThreshold={0.55} luminanceSmoothing={0.45} intensity={mode === 'trading' ? 1.18 : 1.35} mipmapBlur />
+            <Bloom luminanceThreshold={0.55} luminanceSmoothing={0.45} intensity={isTrading ? 1.18 : isInfluencer ? 1.28 : 1.35} mipmapBlur />
             <Noise opacity={0.016} />
-            <Vignette eskil={false} offset={0.19} darkness={mode === 'trading' ? 0.86 : 0.8} />
+            <Vignette eskil={false} offset={0.19} darkness={isTrading ? 0.86 : isInfluencer ? 0.83 : 0.8} />
           </EffectComposer>
         </Canvas>
       </div>
@@ -39,9 +42,12 @@ export default function App() {
       <div className="mode-switch" role="tablist" aria-label="Demo mode">
         <button className={mode === 'revenue' ? 'active' : ''} onClick={() => setMode('revenue')}>REVENUE OS</button>
         <button className={mode === 'trading' ? 'active' : ''} onClick={() => setMode('trading')}>TRADING OS</button>
+        <button className={`influencer-mode ${mode === 'influencer' ? 'active' : ''}`} onClick={() => setMode('influencer')}>INFLUENCER OS</button>
       </div>
 
-      {mode === 'revenue' ? <HUD /> : <TradingHUD />}
+      {mode === 'revenue' && <HUD />}
+      {mode === 'trading' && <TradingHUD />}
+      {mode === 'influencer' && <InfluencerHUD />}
     </main>
   )
 }
