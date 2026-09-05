@@ -1,0 +1,419 @@
+.mode-switch {
+  position: absolute;
+  z-index: 20;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid rgba(139, 226, 245, .12);
+  background: rgba(3, 11, 15, .68);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, .25), inset 0 1px 0 rgba(255, 255, 255, .025);
+  pointer-events: auto;
+}
+
+.mode-switch button {
+  appearance: none;
+  border: 0;
+  padding: 7px 12px;
+  background: transparent;
+  color: rgba(166, 216, 226, .42);
+  font: 600 7px 'IBM Plex Mono', monospace;
+  letter-spacing: .1em;
+  cursor: pointer;
+}
+
+.mode-switch button.active {
+  color: rgba(229, 252, 255, .9);
+  background: linear-gradient(180deg, rgba(83, 223, 255, .11), rgba(73, 207, 240, .035));
+  box-shadow: inset 0 0 0 1px rgba(97, 224, 255, .11), 0 0 20px rgba(66, 214, 255, .035);
+}
+
+.mode-switch button:last-child.active {
+  color: #d8ffe5;
+  background: linear-gradient(180deg, rgba(86, 255, 163, .11), rgba(62, 226, 139, .035));
+  box-shadow: inset 0 0 0 1px rgba(105, 255, 172, .12), 0 0 24px rgba(75, 255, 150, .04);
+}
+
+.trading-hud {
+  position: absolute;
+  inset: 0;
+  z-index: 8;
+  pointer-events: none;
+  color: #effcff;
+}
+
+.trade-top-left,
+.trade-top-right,
+.trade-center-stage,
+.trade-left-rail,
+.trade-right-rail,
+.trade-controls,
+.trade-bottom-status,
+.trade-toast,
+.truth-overlay {
+  position: absolute;
+}
+
+.trade-top-left {
+  top: 22px;
+  left: 24px;
+  display: grid;
+  gap: 8px;
+}
+
+.trade-brand {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.trade-brand > svg { color: #67f2ff; filter: drop-shadow(0 0 8px rgba(84, 227, 255, .22)); }
+.trade-brand small,
+.trade-brand strong,
+.paper-disclosure,
+.trade-top-right,
+.trade-panel-title,
+.chart-symbol,
+.chart-watermark,
+.chart-side-metrics,
+.trade-controls,
+.trade-bottom-status,
+.truth-callout,
+.market-badges,
+.timeframes {
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: .08em;
+}
+
+.trade-brand small { display: block; font-size: 6px; color: rgba(167, 222, 232, .38); }
+.trade-brand strong { display: block; margin-top: 2px; font-size: 11px; font-weight: 600; letter-spacing: .13em; }
+.paper-disclosure { display: flex; align-items: center; gap: 6px; font-size: 6.5px; color: rgba(134, 255, 187, .66); }
+.paper-disclosure i { width: 5px; height: 5px; border-radius: 50%; background: #6dffad; box-shadow: 0 0 9px rgba(91,255,166,.78); animation: statusPulse 1.8s ease-in-out infinite; }
+
+.trade-top-right {
+  top: 26px;
+  right: 24px;
+  display: flex;
+  gap: 14px;
+  font-size: 6px;
+  color: rgba(173, 221, 231, .38);
+}
+.trade-top-right span { display: flex; align-items: center; gap: 4px; }
+.trade-top-right b { color: rgba(207, 248, 255, .65); font-weight: 500; }
+.trade-top-right span:first-child b { color: rgba(128, 255, 183, .65); }
+
+.trade-center-stage {
+  left: 18.5%;
+  right: 18.5%;
+  top: 12%;
+  bottom: 18%;
+}
+
+.trade-chart-head {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: auto;
+}
+.timeframes { display: flex; gap: 4px; }
+.timeframes button {
+  border: 0;
+  background: transparent;
+  color: rgba(172, 218, 228, .34);
+  font: 600 6px 'IBM Plex Mono', monospace;
+  padding: 5px 7px;
+  cursor: pointer;
+}
+.timeframes button.active { color: rgba(229, 252, 255, .88); background: rgba(90, 224, 255, .07); box-shadow: inset 0 -1px rgba(90, 233, 255, .4); }
+.market-badges { display: flex; gap: 12px; font-size: 5.5px; color: rgba(163, 211, 222, .3); }
+.market-badges b { margin-left: 4px; color: rgba(113, 255, 174, .62); font-weight: 500; }
+
+.trade-chart-shell {
+  position: absolute;
+  inset: 32px 0 0;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 62% 46%, rgba(25, 74, 86, .12), transparent 38%),
+    linear-gradient(180deg, rgba(3, 12, 16, .71), rgba(2, 8, 11, .54));
+  border: 1px solid rgba(111, 218, 240, .09);
+  box-shadow: inset 0 0 70px rgba(46, 192, 220, .035), 0 24px 80px rgba(0, 0, 0, .2);
+  backdrop-filter: blur(3px);
+}
+.trade-chart-shell::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(107, 244, 255, .025), transparent);
+  transform: translateX(-110%);
+  animation: chartSweep 8s linear infinite;
+  pointer-events: none;
+}
+.trade-chart { width: 100%; height: 100%; overflow: visible; }
+.chart-grid-line { stroke: rgba(127, 213, 230, .055); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.chart-grid-line.vertical { stroke: rgba(127, 213, 230, .035); }
+.candle line { stroke-width: 1.15; vector-effect: non-scaling-stroke; }
+.candle rect { vector-effect: non-scaling-stroke; }
+.candle.up line, .candle.up rect { stroke: #70f5ae; fill: rgba(89, 237, 157, .82); }
+.candle.down line, .candle.down rect { stroke: #ff7180; fill: rgba(245, 91, 110, .72); }
+.candle.current { filter: url(#glow); animation: currentCandlePulse 1.35s ease-in-out infinite; }
+
+.session-range rect { fill: rgba(77, 202, 255, .025); stroke: rgba(81, 215, 255, .2); stroke-width: 1; stroke-dasharray: 5 4; vector-effect: non-scaling-stroke; animation: rangeDraw .75s ease-out both; transform-origin: left center; }
+.session-range text { fill: rgba(112, 218, 239, .4); font: 500 8px 'IBM Plex Mono', monospace; letter-spacing: .06em; }
+.liquidity-layer line { stroke: rgba(125, 127, 255, .42); stroke-width: 1; stroke-dasharray: 3 5; vector-effect: non-scaling-stroke; }
+.liquidity-layer > text { fill: rgba(163, 167, 255, .54); font: 500 8px 'IBM Plex Mono', monospace; letter-spacing: .07em; }
+.sweep-ring { fill: none; stroke: #ab92ff; stroke-width: 1.5; vector-effect: non-scaling-stroke; filter: url(#glow); animation: sweepRing 1.7s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+.sweep-arrow { fill: none; stroke: rgba(185, 160, 255, .7); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.sweep-text { fill: rgba(206, 195, 255, .72) !important; }
+.entry-line { stroke: rgba(109, 236, 255, .72); stroke-width: 1.2; stroke-dasharray: 5 3; vector-effect: non-scaling-stroke; }
+.stop-line { stroke: rgba(255, 100, 118, .6); stroke-width: 1; stroke-dasharray: 4 4; vector-effect: non-scaling-stroke; }
+.tp-line { stroke: rgba(111, 255, 168, .46); stroke-width: 1; stroke-dasharray: 4 4; vector-effect: non-scaling-stroke; }
+.tp-line.tp2 { stroke: rgba(111, 255, 168, .74); }
+.entry-label, .stop-label, .tp-label { font: 600 8px 'IBM Plex Mono', monospace; }
+.entry-label { fill: rgba(117, 234, 255, .78); }
+.stop-label { fill: rgba(255, 111, 125, .72); }
+.tp-label { fill: rgba(119, 255, 171, .72); }
+.entry-marker circle { fill: rgba(81, 220, 255, .1); stroke: #6fe8ff; stroke-width: 1; }
+.entry-marker path { fill: none; stroke: #c6f8ff; stroke-width: 1.3; }
+.trade-plan-layer { animation: planReveal .58s cubic-bezier(.22,1,.36,1) both; }
+.current-price line { stroke: rgba(115, 242, 255, .24); stroke-width: 1; stroke-dasharray: 2 4; }
+.current-price rect { fill: rgba(18, 68, 76, .85); stroke: rgba(92, 230, 255, .24); stroke-width: 1; }
+.current-price text { fill: rgba(224, 252, 255, .82); font: 600 9px 'IBM Plex Mono', monospace; }
+.time-label { fill: rgba(149, 200, 212, .25); font: 500 7px 'IBM Plex Mono', monospace; }
+.svg-scan-beam { fill: rgba(95, 236, 255, .065); filter: url(#glow); animation: svgScan 1.55s ease-in-out infinite; }
+
+.chart-symbol { position: absolute; top: 12px; left: 14px; display: flex; align-items: end; gap: 8px; }
+.chart-symbol strong { display: block; font-size: 16px; letter-spacing: .04em; }
+.chart-symbol span { display: block; font-size: 5px; color: rgba(177, 220, 229, .36); }
+.chart-symbol small { font-size: 5px; color: rgba(114, 255, 174, .46); margin-bottom: 2px; }
+.chart-watermark { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-8deg); font-size: 12px; letter-spacing: .25em; color: rgba(193, 242, 250, .025); white-space: nowrap; }
+
+.chart-side-metrics { position: absolute; top: 55px; left: 14px; display: grid; gap: 5px; }
+.chart-side-metrics > div { min-width: 104px; padding: 8px 9px; border-left: 1px solid rgba(94, 227, 255, .14); background: linear-gradient(90deg, rgba(5, 20, 25, .5), transparent); }
+.chart-side-metrics span { display: block; font-size: 5px; color: rgba(156, 208, 218, .3); }
+.chart-side-metrics strong { display: block; margin-top: 3px; font-size: 12px; color: rgba(223, 249, 252, .8); }
+
+.paper-panel {
+  background: linear-gradient(145deg, rgba(7, 21, 26, .72), rgba(3, 11, 14, .52));
+  border: 1px solid rgba(132, 225, 244, .1);
+  box-shadow: inset 0 1px rgba(255,255,255,.02), 0 20px 60px rgba(0,0,0,.16);
+  backdrop-filter: blur(14px);
+}
+.trade-panel-title { display: flex; align-items: center; gap: 6px; font-size: 6px; color: rgba(161, 218, 229, .42); }
+.trade-panel-title span { margin-left: auto; color: rgba(107, 255, 170, .55); }
+.trade-panel-title > i { margin-left: auto; width: 5px; height: 5px; border-radius: 50%; background: #6dffad; box-shadow: 0 0 8px #6dffad; animation: statusPulse 1.8s ease-in-out infinite; }
+
+.position-card { position: absolute; right: 13px; top: 55px; width: 182px; padding: 11px; }
+.paper-pnl { margin-top: 10px; }
+.paper-pnl span { display: block; font: 500 5px 'IBM Plex Mono', monospace; color: rgba(162, 210, 220, .3); letter-spacing: .08em; }
+.paper-pnl strong { display: block; margin-top: 3px; font-size: 22px; color: #b9ffd3; text-shadow: 0 0 20px rgba(89, 255, 157, .12); }
+.paper-pnl small { font: 500 6px 'IBM Plex Mono', monospace; color: rgba(103, 255, 168, .5); }
+.position-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; margin-top: 10px; }
+.position-grid span { display: block; font: 500 5px 'IBM Plex Mono', monospace; color: rgba(163, 207, 216, .27); }
+.position-grid b { display: block; margin-top: 2px; font: 500 8px 'IBM Plex Mono', monospace; color: rgba(224, 246, 250, .64); }
+.paper-equity { height: 2px; margin-top: 11px; background: rgba(115, 216, 232, .07); overflow: hidden; }
+.paper-equity i { display: block; width: var(--eq); height: 100%; background: linear-gradient(90deg, #5fc9ff, #68ffac); box-shadow: 0 0 8px rgba(92,255,167,.22); transition: width .5s cubic-bezier(.22,1,.36,1); }
+
+.trade-left-rail, .trade-right-rail { top: 14.5%; width: 15.5%; display: grid; gap: 9px; }
+.trade-left-rail { left: 18px; }
+.trade-right-rail { right: 18px; }
+.model-vote-panel, .reasoning-panel, .risk-engine, .execution-router { padding: 11px; }
+.vote-stack { display: grid; gap: 8px; margin-top: 11px; }
+.vote-stack > div { display: flex; align-items: center; justify-content: space-between; }
+.vote-stack span { font: 500 5.5px 'IBM Plex Mono', monospace; color: rgba(163, 211, 221, .34); }
+.vote-stack b { font: 600 6px 'IBM Plex Mono', monospace; color: rgba(221, 234, 237, .42); }
+.vote-stack b.long { color: rgba(108, 255, 169, .72); text-shadow: 0 0 9px rgba(86,255,153,.14); }
+.confidence-track { height: 2px; margin-top: 11px; background: rgba(125, 219, 238, .06); overflow: hidden; }
+.confidence-track i { display: block; height: 100%; width: var(--confidence); background: linear-gradient(90deg, rgba(94, 218, 255, .5), #6dffad); transition: width .7s cubic-bezier(.22,1,.36,1); }
+.reasoning-row { display: grid; grid-template-columns: 17px 1fr auto; gap: 5px; align-items: center; padding: 9px 0; border-bottom: 1px solid rgba(132, 221, 240, .055); }
+.reasoning-row:last-child { border-bottom: 0; }
+.reasoning-row span, .reasoning-row small { font: 500 5px 'IBM Plex Mono', monospace; color: rgba(123, 216, 235, .35); }
+.reasoning-row strong { font-size: 7px; font-weight: 500; color: rgba(221, 246, 250, .62); }
+.reasoning-row small { color: rgba(104, 255, 168, .37); }
+
+.risk-orbit { width: 82px; height: 82px; margin: 12px auto; border-radius: 50%; display: grid; place-items: center; position: relative; background: conic-gradient(#6dffad 0 64%, #65ddff 64% 86%, rgba(113,218,238,.08) 86%); box-shadow: 0 0 28px rgba(74, 255, 156, .035); animation: riskBreathe 3.2s ease-in-out infinite; }
+.risk-orbit::before { content: ''; position: absolute; inset: 4px; background: #061015; border-radius: 50%; }
+.risk-orbit::after { content: ''; position: absolute; inset: -7px; border: 1px dashed rgba(102, 224, 245, .12); border-radius: 50%; animation: brandSpin 10s linear infinite; }
+.risk-orbit div { position: relative; z-index: 1; text-align: center; }
+.risk-orbit span { display: block; font-size: 13px; font-weight: 600; }
+.risk-orbit small { display: block; margin-top: 2px; font: 500 5px 'IBM Plex Mono', monospace; color: rgba(112,255,176,.45); }
+.risk-data { display: flex; justify-content: space-between; }
+.risk-data span { font: 500 5px 'IBM Plex Mono', monospace; color: rgba(159, 205, 215, .3); }
+.risk-data b { display: block; margin-top: 2px; color: rgba(222, 246, 250, .62); font-weight: 500; }
+.route-step { display: grid; grid-template-columns: 18px 1fr 14px; gap: 6px; align-items: center; margin-top: 9px; }
+.route-step b { font: 500 5px 'IBM Plex Mono', monospace; color: rgba(120, 218, 238, .4); }
+.route-step span { font: 500 5.5px 'IBM Plex Mono', monospace; color: rgba(178, 218, 226, .34); }
+.route-step i { position: relative; height: 1px; background: rgba(104, 220, 240, .09); overflow: hidden; }
+.route-step.active i::after { content: ''; position: absolute; width: 5px; height: 2px; background: #6dffad; box-shadow: 0 0 6px #6dffad; animation: routerPacket .85s linear infinite; }
+.route-step.active span { color: rgba(221, 248, 251, .58); }
+.route-step:nth-child(3) i::after { animation-delay: .17s; }
+.route-step:nth-child(4) i::after { animation-delay: .34s; }
+.route-step:nth-child(5) i::after { animation-delay: .51s; }
+
+.trade-controls {
+  z-index: 14;
+  left: 50%;
+  bottom: 46px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 3px;
+  padding: 4px;
+  pointer-events: auto;
+}
+.trade-controls button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 0;
+  background: rgba(77, 197, 222, .035);
+  color: rgba(178, 222, 231, .52);
+  padding: 8px 9px;
+  font: 600 5.5px 'IBM Plex Mono', monospace;
+  letter-spacing: .06em;
+  cursor: pointer;
+  transition: background .18s ease, color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+.trade-controls button:hover { color: #ecfcff; background: rgba(91, 223, 255, .09); transform: translateY(-1px); }
+.trade-controls button.primary { color: rgba(200, 248, 255, .78); box-shadow: inset 0 0 0 1px rgba(95, 225, 255, .1); }
+.trade-controls button.profit { color: rgba(161, 255, 197, .72); background: rgba(77, 255, 154, .045); }
+.trade-controls button.truth { color: rgba(255, 208, 109, .65); }
+
+.trade-toast {
+  z-index: 15;
+  left: 50%;
+  top: 9.5%;
+  transform: translateX(-50%);
+  min-width: 330px;
+  display: grid;
+  grid-template-columns: 28px 1fr auto;
+  gap: 9px;
+  align-items: center;
+  padding: 9px 11px;
+  border-color: rgba(108, 255, 171, .14);
+  overflow: hidden;
+}
+.trade-toast > div { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; color: #8cffb7; border: 1px solid rgba(108,255,171,.17); background: rgba(76,255,150,.035); }
+.trade-toast span small, .trade-toast span strong { display: block; font-family: 'IBM Plex Mono', monospace; }
+.trade-toast span small { font-size: 5.5px; color: rgba(109,255,171,.58); letter-spacing: .09em; }
+.trade-toast span strong { margin-top: 3px; font-size: 6px; font-weight: 500; color: rgba(208, 240, 245, .48); }
+.trade-toast > b { font-size: 15px; color: #b9ffd1; }
+.trade-toast > i { position: absolute; left: -50px; top: 0; bottom: 0; width: 45px; background: linear-gradient(90deg, transparent, rgba(110,255,179,.08), transparent); transform: skewX(-16deg); animation: toastScan 2.3s ease-in-out infinite; }
+
+.trade-bottom-status { left: 18px; right: 18px; bottom: 13px; display: flex; align-items: center; gap: 18px; font-size: 5.5px; color: rgba(155, 208, 219, .28); }
+.trade-bottom-status span, .trade-bottom-status strong { display: flex; align-items: center; gap: 5px; }
+.trade-bottom-status strong { margin-left: auto; color: rgba(111, 255, 174, .52); font-weight: 500; }
+.trade-bottom-status strong i { width: 5px; height: 5px; border-radius: 50%; background: #6dffad; box-shadow: 0 0 8px #6dffad; animation: statusPulse 1.8s ease-in-out infinite; }
+
+.truth-revealed .trade-chart-shell,
+.truth-revealed .paper-panel,
+.truth-revealed .trade-top-left,
+.truth-revealed .trade-top-right,
+.truth-revealed .trade-bottom-status {
+  filter: grayscale(.85) brightness(.58);
+  transition: filter .55s ease;
+}
+.truth-revealed .trade-chart-shell::before,
+.truth-revealed .svg-scan-beam,
+.truth-revealed .route-step i::after,
+.truth-revealed .risk-orbit::after,
+.truth-revealed .paper-disclosure i {
+  animation-play-state: paused !important;
+}
+.truth-overlay { inset: 0; z-index: 30; pointer-events: none; background: rgba(0, 3, 4, .34); backdrop-filter: blur(1.5px); }
+.truth-card { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(520px, 72vw); padding: 22px 24px; text-align: center; background: rgba(6, 10, 11, .92); border: 1px solid rgba(255, 208, 100, .19); box-shadow: 0 30px 100px rgba(0,0,0,.55); }
+.truth-card > svg { color: #ffd777; }
+.truth-card small { display: block; margin-top: 8px; font: 600 6px 'IBM Plex Mono', monospace; letter-spacing: .16em; color: rgba(255, 211, 113, .68); }
+.truth-card strong { display: block; margin-top: 8px; font-size: 22px; letter-spacing: -.025em; }
+.truth-card p { margin: 10px auto 0; max-width: 440px; font-size: 10px; line-height: 1.55; color: rgba(209, 223, 226, .58); }
+.truth-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; margin-top: 14px; }
+.truth-tags span { padding: 5px 7px; border: 1px solid rgba(255, 206, 102, .12); color: rgba(255, 217, 135, .54); font: 600 5px 'IBM Plex Mono', monospace; letter-spacing: .08em; }
+.truth-callout { display: flex; align-items: center; gap: 4px; position: absolute; padding: 6px 8px; background: rgba(15, 13, 8, .88); border-left: 1px solid rgba(255, 203, 93, .42); color: rgba(255, 221, 146, .64); font-size: 5.5px; }
+.truth-callout svg { width: 10px; height: 10px; }
+.truth-callout.c1 { left: 24%; top: 30%; }
+.truth-callout.c2 { right: 22%; top: 34%; }
+.truth-callout.c3 { left: 11%; top: 60%; }
+.truth-callout.c4 { right: 10%; top: 64%; }
+
+@keyframes chartSweep {
+  0% { transform: translateX(-110%); }
+  52%, 100% { transform: translateX(120%); }
+}
+@keyframes currentCandlePulse {
+  0%, 100% { opacity: .75; }
+  50% { opacity: 1; filter: url(#glow); }
+}
+@keyframes rangeDraw {
+  from { transform: scaleX(0); opacity: 0; }
+  to { transform: scaleX(1); opacity: 1; }
+}
+@keyframes planReveal {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes sweepRing {
+  0% { transform: scale(.45); opacity: 0; }
+  22% { opacity: 1; }
+  100% { transform: scale(2.15); opacity: 0; }
+}
+@keyframes svgScan {
+  0% { transform: translateX(-60px); opacity: 0; }
+  15% { opacity: .9; }
+  80% { opacity: .6; }
+  100% { transform: translateX(1010px); opacity: 0; }
+}
+@keyframes riskBreathe {
+  0%, 100% { filter: brightness(.84); transform: scale(.98); }
+  50% { filter: brightness(1.1); transform: scale(1.02); }
+}
+@keyframes routerPacket {
+  from { left: -6px; opacity: 0; }
+  18% { opacity: 1; }
+  82% { opacity: 1; }
+  to { left: 100%; opacity: 0; }
+}
+@keyframes toastScan {
+  0%, 14% { left: -55px; opacity: 0; }
+  32% { opacity: 1; }
+  70%, 100% { left: calc(100% + 55px); opacity: 0; }
+}
+
+@media (max-width: 1100px) {
+  .trade-center-stage { left: 17%; right: 17%; }
+  .trade-left-rail, .trade-right-rail { width: 14.5%; }
+  .position-card { width: 160px; }
+  .trade-controls button { padding: 7px 6px; font-size: 5px; }
+}
+
+@media (max-width: 900px) {
+  .mode-switch { top: 12px; }
+  .trade-top-left { top: 54px; left: 12px; }
+  .trade-top-right { display: none; }
+  .trade-center-stage { left: 10px; right: 10px; top: 18%; bottom: 24%; }
+  .trade-left-rail, .trade-right-rail { display: none; }
+  .market-badges span:nth-child(-n+2) { display: none; }
+  .position-card { width: 145px; padding: 8px; }
+  .paper-pnl strong { font-size: 18px; }
+  .chart-side-metrics > div:nth-child(n+2) { display: none; }
+  .trade-controls { width: calc(100% - 20px); overflow-x: auto; justify-content: flex-start; bottom: 40px; }
+  .trade-controls button { flex: 0 0 auto; }
+  .truth-callout { display: none; }
+}
+
+@media (max-width: 640px) {
+  .mode-switch button { padding: 6px 8px; font-size: 5.5px; }
+  .trade-brand strong { font-size: 9px; }
+  .paper-disclosure { font-size: 5.5px; }
+  .trade-center-stage { top: 20%; bottom: 28%; }
+  .position-card { top: auto; bottom: 8px; right: 8px; width: 135px; }
+  .position-grid { display: none; }
+  .paper-equity { margin-top: 7px; }
+  .chart-side-metrics { display: none; }
+  .trade-toast { top: 13%; min-width: 0; width: calc(100% - 24px); }
+  .trade-controls { bottom: 34px; }
+  .trade-bottom-status span:nth-child(n+2) { display: none; }
+  .truth-card { width: calc(100% - 28px); padding: 18px; }
+  .truth-card strong { font-size: 17px; }
+}
